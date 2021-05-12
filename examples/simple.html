@@ -87,17 +87,18 @@
       poly.position.x = -3;
       
       cube.addEventListener('click', (event) => {
-        event.target.material.color.set(0x00ff00);
+        cone.material.color.set(0X00ffff);
+        poly.material.color.set(0Xffff00);
       });
 
       cone.addEventListener('click', (event) => {
-        console.log(event);
-        event.target.material.color.set(0xff0000);
+        cube.material.color.set(0X00ffaf);
+        poly.material.color.set(0Xffffd0);
       });
 
       poly.addEventListener('click', (event) => {
-        console.log(event);
-        event.target.material.color.set(0x0000ff);
+        cone.material.color.set(0X00feef);
+        cube.material.color.set(0Xfffce0);
       });
 
       scene.add(cube);
